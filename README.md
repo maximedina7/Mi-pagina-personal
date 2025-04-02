@@ -86,7 +86,7 @@
                 <th>Estado</th>
             </tr>
         </thead>
-        <tbody style="color:cyan">
+        <tbody style="color:#007BFF">
             <tr>
                 <td>Fundamentos del control de calidad</td>
                 <td>Cursando</td>
