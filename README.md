@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <div class="wrapper">
         <div class="container">
@@ -24,26 +32,26 @@
             
             </div>
             
-            <div class="companeros">
+     <div class="companeros">
                 <h2>📚 Mis Compañeros de Clase</h2>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/nazarenomiguel73/?__pwa=1" target="_blank">
+                        <a href="https://www.instagram.com/nazarenomiguel73/?__pwa=1" target="_blank" style="color: #f0f0f0;">
                             👤 Nazareno Miguel (@nazarenomiguel73)
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/ignacio_iramain/?__pwa=1" target="_blank">
+                        <a href="https://www.instagram.com/ignacio_iramain/?__pwa=1" target="_blank" style="color: #f0f0f0;">
                             👤 Iramain Ignacio (@ignacio_iramain)
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/santiago_albornoz1/?__pwa=1" target="_blank">
+                        <a href="https://www.instagram.com/santiago_albornoz1/?__pwa=1" target="_blank" style="color: #f0f0f0;">
                             👤 Santiago Albornoz (@santiago_albornoz1)
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/natyayusa/?__pwa=1" target="_blank">
+                        <a href="https://www.instagram.com/natyayusa/?__pwa=1" target="_blank"  style="color: #f0f0f0;">
                             👤 Natalia Ayusa (@natyayusa)
                         </a>
                     </li>  
@@ -89,39 +97,11 @@
             color: #333;
         }
             </style>
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("busqueda").addEventListener("keyup", filtrarMaterias);
-        });
-
-        function filtrarMaterias() {
-            let input = document.getElementById("busqueda").value.toLowerCase();
-            let filas = document.querySelectorAll("tbody tr");
-            let estadoTexto = document.getElementById("estadoMateria");
-            let encontrado = false;
-            
-            filas.forEach(fila => {
-                let materia = fila.cells[0].textContent.toLowerCase();
-                let estado = fila.cells[2].textContent;
-                
-                if (materia.includes(input) && input !== "") {
-                    fila.style.display = "";
-                    estadoTexto.textContent = "Estado: " + estado;
-                    encontrado = true;
-                } else {
-                    fila.style.display = "none";
-                }
-            });
-            
-            if (!encontrado) {
-                estadoTexto.textContent = "";
-            }
-        }
-            </script>
+  
         </head>
         <body>
             <h2>Materia/Estado</h2>
-            <input type="text" id="busqueda" placeholder="Buscar materia..." onkeyup="filtrarMaterias()">
+            <input type="text" id="busqueda" placeholder="Buscar materia...">
             <p id="estadoMateria"></p>
         <table>
         <thead>
@@ -210,3 +190,34 @@
 
 </body>
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("busqueda").addEventListener("keyup", filtrarMaterias);
+    });
+
+    function filtrarMaterias() {
+        let input = document.getElementById("busqueda").value; // Selecciona el input correcto
+        let filas = document.querySelectorAll("tbody tr");
+        let estadoTexto = document.getElementById("estadoMateria");
+        let encontrado = false;
+
+        filas.forEach(fila => {
+            let materia = fila.cells[0].textContent.toLowerCase(); // Ahora usa la celda correcta
+            let estado = fila.cells[1].textContent; // La segunda columna tiene el estado
+            
+            if (materia.includes(input) && input !== "") {
+                fila.style.display = "";
+                estadoTexto.textContent = "Estado: " + estado;
+                encontrado = true;
+            } else {
+                fila.style.display = "none";
+            }
+        });
+
+        if (!encontrado) {
+            estadoTexto.textContent = "";
+        }
+    }
+
+    </script>

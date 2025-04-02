@@ -68,14 +68,13 @@ th {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     margin: 20px auto;
     text-align: center;
 }
 
 .companeros h2 {
-    color: #007BFF;
+    color: #ffffff;
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -91,13 +90,12 @@ th {
 }
 
 .companeros a {
-    text-decoration: none;
-    color: #007BFF;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .companeros a:hover {
-    color: #0056b3;
+    color: #ffffff;
     text-decoration: underline;
 }
 
