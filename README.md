@@ -25,7 +25,7 @@
             </div>
             
      <div class="companeros" style="color:#007BFF">
-                <h2>📚 Mis Compañeros de Clase</h2>
+                <h2 style="color:#007BFF">📚 Mis Compañeros de Clase</h2>
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/nazarenomiguel73/?__pwa=1" target="_blank" style="color: #f0f0f0;">
