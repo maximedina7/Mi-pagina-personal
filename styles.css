@@ -30,6 +30,77 @@ body {
     margin-top: 50px;
 }
 
+/* Contenedor de la tabla */
+.contenedor-tabla {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustar el ancho de la tabla */
+table {
+    width: 100%;  /* Hace que la tabla ocupe todo el ancho disponible */
+    max-width: 90%; /* Controla que no sea demasiado ancha */
+    margin: 20px auto; /* Centra la tabla */
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustar celdas para que los textos queden alineados */
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    width: 50%; /* Hace que las dos columnas ocupen el mismo espacio */
+}
+
+/* Para que el encabezado tenga un mejor contraste */
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* lista de compañeros */
+.companeros {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.companeros h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.companeros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.companeros li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.companeros a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.companeros a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
 /* Estilo de la sección de perfil */
 .profile {
     display: flex;
