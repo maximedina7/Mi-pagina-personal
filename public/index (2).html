@@ -15,7 +15,7 @@
                     <h1>Maximiliano Medina</h1>
                     <h2>Estudiante en la Facultad de Ingeniería | Carrera: Desarrollo y Calidad de Software</h2>
                     <p>
-                        Hola! soy un chico de 21 años, estoy estudiando una tecnicatura en programación en la Universidad Santo Tomás de Aquino (UNSTA) y aspiro a trabajar de eso.
+                        Hola! soy un chico de 21 años, estoy estudiando una tecnicatura en programación  en la Universidad Santo Tomás de Aquino (UNSTA) y aspiro a trabajar de eso.
                          La verdad, mi sueño es tener mi dinero, mantener a mi madre y comprarle una casa.
                          Y ademas de eso tambien planeo seguir progresando y adquirir el mayor conocmiento posible en este camino de programar y la vida.
                          
@@ -31,34 +31,8 @@
                 </ul>
             
             </div>
-            
-            <div class="companeros">
-                <h2>📚 Mis Compañeros de Clase</h2>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/nazarenomiguel73/?__pwa=1" target="_blank">
-                            👤 Nazareno Miguel (@nazarenomiguel73)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ignacio_iramain/?__pwa=1" target="_blank">
-                            👤 Iramain Ignacio (@ignacio_iramain)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/santiago_albornoz1/?__pwa=1" target="_blank">
-                            👤 Santiago Albornoz (@santiago_albornoz1)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/natyayusa/?__pwa=1" target="_blank">
-                            👤 Natalia Ayusa (@natyayusa)
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="estadoMateria">
+        
+            <div class="estudiando">
                 <h3>Materias cursadas</h3>
                 <ul>
                     <li>Fundamentos del control de calidad </li>
@@ -68,20 +42,20 @@
                     <li>Formacion Humanística</li>
                 </ul>
             
+                
             </div>
             
             <title>Materia/Estado</title>
             <link rel="stylesheet" href="styles.css">
             <style>
                 body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
-                table { width: 100%; margin: 20px auto; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-                th, td { border: 1px solid black; padding: 10px; text-align: left; }
+                table { width: 100%; max-width: 90%; margin: 20px auto; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+                th, td { border: 1px solid black; padding: 15px; text-align: center; width: 50%; }
                 th { background-color: #007BFF; color: white; }
                 input {
                     width: 100%;
-                    max-width: 600px;
                     padding: 10px;
-                    margin: 10px;
+                    margin: 10px 0;
                     border: 2px solid #007BFF;
                     border-radius: 5px;
                     outline: none;
@@ -129,8 +103,10 @@
         </head>
         <body>
             <h2>Materia/Estado</h2>
-            <input type="text" id="busqueda" placeholder="Buscar materia..." onkeyup="filtrarMaterias()">
+            <input type="text" id="busqueda" onkeyup="filtrarMaterias()" placeholder="Buscar materia...">
             <p id="estadoMateria"></p>
+            
+            <div class="contenedor-tabla">
         <table>
         <thead>
             <tr>
@@ -161,6 +137,32 @@
             </tr>
         </tbody>
     </table>
+            </div>
+             
+            <div class="companeros">
+                <h2>📚 Mis Compañeros de Clase</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/nazarenomiguel73/?__pwa=1" target="_blank">
+                            👤 Nazareno Miguel (@nazarenomiguel73)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ignacio_iramain/?__pwa=1" target="_blank">
+                            👤 Iramain Ignacio (@ignacio_iramain)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/santiago_albornoz1/?__pwa=1" target="_blank">
+                            👤 Santiago Albornoz (@santiago_albornoz1)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/natyayusa/?__pwa=1" target="_blank">
+                            👤 Natalia Ayusa (@natyayusa)
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <title>Mis Redes</title>
@@ -216,5 +218,7 @@
                 </p>
             </div>
 
+        </div>
+    </div>
 </body>
 </html>
