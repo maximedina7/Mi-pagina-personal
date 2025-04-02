@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 });
 
 // Servir archivos estáticos desde "public"
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Ruta principal
 app.get('/', (req, res) => {
