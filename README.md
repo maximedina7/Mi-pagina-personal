@@ -72,38 +72,15 @@
             
             <title>Materia/Estado</title>
             <link rel="stylesheet" href="styles.css">
-            <style>
-                body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
-                table { width: 100%; margin: 20px auto; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-                th, td { border: 1px solid black; padding: 10px; text-align: left; }
-                th { background-color: #007BFF; color: white; }
-                input {
-                    width: 100%;
-                    max-width: 600px;
-                    padding: 10px;
-                    margin: 10px;
-                    border: 2px solid #007BFF;
-                    border-radius: 5px;
-                    outline: none;
-                    font-size: 16px;
-                }
-                input:focus {
-                    border-color: #0056b3;
-                }
-                #estadoMateria {
-            font-size: 18px;
-            margin-top: 10px;
-            font-weight: bold;
-            color: #333;
-        }
-            </style>
-  
-        </head>
+
         <body>
             <h2>Materia/Estado</h2>
             <input type="text" id="busqueda" placeholder="Buscar materia...">
             <p id="estadoMateria"></p>
-        <table>
+
+  <div class="table-container">
+    <h2>📚 Materias y Estado</h2>
+    <table>
         <thead>
             <tr>
                 <th>Materia</th>
@@ -112,28 +89,28 @@
         </thead>
         <tbody>
             <tr>
-                <th>Fundamentos del control de calidad</th>
-                <th>Cursando</th>
+                <td>Fundamentos del control de calidad</td>
+                <td>Cursando</td>
             </tr>
             <tr>
-                <th>Desarrollo de front end</th>
-                <th>Cursando</th>
+                <td>Desarrollo de front end</td>
+                <td>Cursando</td>
             </tr>
             <tr>
-                <th>Formacion humanistica</th>
-                <th>Cursando</th>
+                <td>Formación Humanística</td>
+                <td>Cursando</td>
             </tr>
             <tr>
-                <th>Ingles II</th>
-                <th>Cursando</th>
+                <td>Inglés II</td>
+                <td>Cursando</td>
             </tr>
             <tr>
-                <th>Algebra I</th>
-                <th>Recursando</th>
+                <td>Álgebra I</td>
+                <td>Recursando</td>
             </tr>
         </tbody>
     </table>
-            </div>
+</div>
 
             <title>Mis Redes</title>
             <style>
@@ -167,7 +144,6 @@
                     color: #0056b3; 
                 }
             </style>
-        </head>
         <body>
         
             <div class="contenedor">
@@ -186,7 +162,6 @@
                         Chatear en WhatsApp
                     </a>
                 </p>
-            </div>
 
 </body>
 </html>
@@ -221,3 +196,82 @@
     }
 
     </script>
+
+                <style>
+                body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
+                table { width: 100%; margin: 20px auto; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+                th, td { border: 1px solid black; padding: 10px; text-align: left; }
+                th { background-color: #007BFF; color: white; }
+                input {
+                    width: 100%;
+                    max-width: 600px;
+                    padding: 10px;
+                    margin: 10px;
+                    border: 2px solid #007BFF;
+                    border-radius: 5px;
+                    outline: none;
+                    font-size: 16px;
+                }
+                input:focus {
+                    border-color: #0056b3;
+                }
+                #estadoMateria {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        
+            </style>
+
+
+            <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        background-color: #f4f4f9; 
+        text-align: center;
+        padding: 20px;
+    }
+
+    .table-container {
+        max-width: 700px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: center;
+    }
+
+    thead {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+        background-color: #d6e4ff;
+        transition: background 0.3s;
+    }
+
+    th {
+        font-weight: bold;
+    }
+</style>
+  
