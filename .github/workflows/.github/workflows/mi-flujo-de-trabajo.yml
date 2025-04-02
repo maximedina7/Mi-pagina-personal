@@ -1,0 +1,14 @@
+name: Mi Primer Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Mostrar mensaje
+        run: echo "¡GitHub Actions está activado!"
+
