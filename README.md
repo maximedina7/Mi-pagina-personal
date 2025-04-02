@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía Profesional</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <div class="wrapper">
         <div class="container">
@@ -32,7 +24,7 @@
             
             </div>
             
-     <div class="companeros">
+     <div class="companeros" style="color:#007BFF">
                 <h2>📚 Mis Compañeros de Clase</h2>
                 <ul>
                     <li>
