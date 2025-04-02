@@ -70,16 +70,15 @@
             
             </div>
             
-            <title>Materia/Estado</title>
             <link rel="stylesheet" href="styles.css">
 
         <body>
-            <h2>Materia/Estado</h2>
-            <input type="text" id="busqueda" placeholder="Buscar materia...">
-            <p id="estadoMateria"></p>
+
 
   <div class="table-container">
     <h2>📚 Materias y Estado</h2>
+            <input type="text" id="busqueda" placeholder="Buscar materia...">
+            <p id="estadoMateria"></p>
     <table>
         <thead>
             <tr>
@@ -258,7 +257,7 @@
 
     thead {
         background-color: #007BFF;
-        color: white;
+        color: blue;
     }
 
     tbody tr:nth-child(even) {
