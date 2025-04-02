@@ -12,7 +12,7 @@
             <div class="profile">
                 <img src="image.jpg" alt="Foto de perfil" class="profile-img">
                 <div class="bio">
-                    <h1>Maximiliano Medina</h1>
+                    <h1>Maximiliano Measdasdasdina</h1>
                     <h2>Estudiante en la Facultad de Ingeniería | Carrera: Desarrollo y Calidad de Software</h2>
                     <p>
                         Hola! soy un chico de 21 años, estoy estudiando una tecnicatura en programación y aspiro a trabajar de eso.
