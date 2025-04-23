@@ -1,12 +1,21 @@
+.logo-esquina {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px; /* ajustá el tamaño a lo que necesites */
+    height: auto;
+    z-index: 1000;
+  }
+  
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 40px;
-    background-color: #f8f9fa; /* Very light grey */
-    color: #333;
+    background-color: #020202; /* Very light grey */
+    color: #fdfdfd;
     line-height: 1.6;
 }
 
-h1, h2 {
+h1, h2, h3{
     color: #007bff; /* A professional blue */
     text-align: center;
     margin-bottom: 1.5em;
@@ -20,19 +29,23 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    font-size: 2em;
+}
+
 #array-operations {
-    background-color: #fff;
+    background-color: #4c4848;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e9ecef; /* Light border for definition */
+    border: 1px solid #2088f0; /* Light border for definition */
 }
 
 .result-item {
     margin-bottom: 15px;
     padding: 12px;
-    border-bottom: 1px dashed #dee2e6; /* Subtle dashed line for separation */
+    border-bottom: 1px dashed #e6e3de; /* Subtle dashed line for separation */
     display: flex;
     align-items: center;
 }
@@ -50,49 +63,80 @@ h2 {
 }
 
 #student-form {
-    background-color: #fff;
+    background-color: #4c4848;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e9ecef;
+    border: 1px solid #2088f0;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
-    color: #495057; /* Slightly darker grey for better readability */
+    color: #fdfdfd; /* Slightly darker grey for better readability */
     font-weight: 500;
 }
 
-input[type="text"],
-input[type="email"],
+input[type="text"] {
+    background-color: #28272b;
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #0975e2; /* A standard grey border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+input[type="email"] {
+    background-color: #28272b;
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;; /* A standard grey border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
 input[type="number"] {
     width: calc(100% - 16px);
     padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ced4da; /* A standard grey border */
+    border: 1px solid #0975e2; /* A standard grey border */
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 1rem;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
+input[type="text"]:focus {
+    background-color: #28272b;
+}
+input[type="email"]:focus {
+    background-color: #28272b;
+}
+
 input[type="number"]:focus {
+    background-color: #28272b;
     outline: none;
-    border-color: #007bff;
+    border-color: #e9ecef;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle focus effect */
 }
 
 input[type="text"][readonly] {
-    background-color: #e9ecef;
+    background-color: #28272b;
+    color: #6c757d;
+    cursor: not-allowed;
+    border-color: #e9ecef;
+}
+
+input[type="email"][readonly] {
+    background-color: #28272b;
     color: #6c757d;
     cursor: not-allowed;
     border-color: #e9ecef;
 }
 
 h3 {
-    color: #212529;
+    color: #007bff;
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 1.75em;
@@ -101,8 +145,8 @@ h3 {
 #materias-container > div {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Distribute label and input/input in two columns */
-    gap: 10px;
-    align-items: center;
+    gap: 0px;
+    align-items: left;
     margin-bottom: 15px;
 }
 
