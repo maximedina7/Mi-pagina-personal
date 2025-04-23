@@ -10,7 +10,7 @@ const port = 3000;
 // Function to read a file and handle potential errors
 async function readFile(filePath) {
     try {
-        const data = await fs.readFile(filePath, 'utf8');
+        const data = await fs.readFile(filePath); // No especificar 'utf8' para archivos binarios como imágenes
         return data;
     } catch (error) {
         console.error(`Error reading file ${filePath}:`, error);
@@ -46,6 +46,7 @@ const server = http.createServer(async (req, res) => {
         case '.jpeg':
             contentType = 'image/jpg';
             break;
+        // Agrega más casos para otros tipos de imágenes si es necesario (gif, etc.)
     }
 
     // Read the requested file
